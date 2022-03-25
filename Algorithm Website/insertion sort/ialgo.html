@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/insertion sort/style.css">
+</head>
+<body>
+    <div class="sidenav">
+        <div class="title">Features</div>
+        <hr>
+        <a href="/insertion sort/iinfo.html">What is insertion sort?</a>
+        <a href="/insertion sort/ialgo.html">Algorithm</a>
+        <a href="/insertion sort/icode.html">Code</a>
+        <a href="/insertion sort/iquiz.html">Quiz</a>
+        <a href="/insertion sort/ianimation.html">Animation</a>
+        <a href="/insertion sort/ivideo.html">Video</a>
+      </div>
+      
+      <!-- Page content -->
+      <div class="main">
+        <h2>Algorithm of Insertion Sort</h2>
+        <pre>procedure insertionSort( A : array of items )
+            int holePosition
+            int valueToInsert
+             
+            for i = 1 to length(A) inclusive do:
+             
+               /* select value to be inserted */
+               valueToInsert = A[i]
+               holePosition = i
+               
+               /*locate hole position for the element to be inserted */
+                 
+               while holePosition > 0 and A[holePosition-1] > valueToInsert do:
+                  A[holePosition] = A[holePosition-1]
+                  holePosition = holePosition -1
+               end while
+                 
+               /* insert the number at hole position */
+               A[holePosition] = valueToInsert
+               
+            end for
+             
+         end procedure</pre>
+        
+      </div>
+</body>
+</html>
